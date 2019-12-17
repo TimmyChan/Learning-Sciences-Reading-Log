@@ -1,0 +1,76 @@
+
+%---------------------------------------%
+% Packages arranged by : Tsz Timmy Chan %
+%                 Date : Dec 12th, 2019 % 
+%---------------------------------------%
+
+\documentclass{LSRIarticle}
+\usepackage{LSRIcommon}
+
+%allows for the use of affiliation
+\usepackage[affil-it]{authblk}
+\title{Learning Sciences Reading Log}	% Work Title Here.
+\author{Tsz Timmy Chan}	% YOUR NAME HERE 
+
+\affil{Learning Sciences Research Institute \\ University of Illinois at Chicago}
+
+
+\date{\today}
+\usepackage[log]{LSRIheader}
+\rhead{\begin{small}Tsz L. Chan \end{small}}
+
+\usepackage{setspace}
+%\linespread{2}
+
+% Make subsection "Week 1, etc"
+\usepackage[explicit]{titlesec}
+\titleformat{\subsection}{\normalfont\large\bfseries}{}{0em}{#1: Week\ \thesubsection}
+\renewcommand{\thesubsection}{\arabic{subsection}}
+
+
+% make it so there's no indent
+\setlength{\parindent}{0pt} 
+
+
+\addbibresource{My_Library.bib}		% Reference file, NO SPACES in the name
+\input{TCglossary}					% Glossary file for acrynoms and whatnot
+
+
+\begin{document}
+%\smalltitle
+
+
+\clearpage\maketitle
+\thispagestyle{empty}
+
+\section*{Introduction}
+\input{intro}
+\newpage
+\tableofcontents
+\newpage
+\listoffigures
+
+\newpage
+
+\section*{Summer 2019}
+\input{Summer2019} 
+
+\newpage
+\section{Fall 2019}
+\input{Fall2019}
+
+
+\newpage
+
+\printbibliography[heading=bibintoc]
+
+
+\newpage
+\printglossary[type=\acronymtype]
+\printglossary
+
+
+
+
+
+\end{document}
