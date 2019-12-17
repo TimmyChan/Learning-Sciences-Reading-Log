@@ -11,3 +11,7 @@
 *.run.xml
 *.synctex*
 *.toc
+*.acr
+*.alg
+*.glg
+*.gls
